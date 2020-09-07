@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="form-group row">
+       
+        <div class="col-sm-6">
+            <div class="text-center">
+        <input type="text" class="form-control"  [(ngModel)]="searchValue" (input)="search()" id="searchbar" placeholder="Search"/>
+        
+    </div>    
+    </div>
+    </div>
+    <div class="card">
+      <p-table [value]="Employees" [scrollable]="true" scrollHeight="200px">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Log Button</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-employee>
+          <tr >
+            <td >{{employee.Name }}</td>
+            <td >{{employee.Address}}</td>
+            <td >{{employee.Age}}</td>
+            <td >{{employee.Phone}}</td>            
+            <td><button class="btn btn-primary" (click)="getUser(employee)">get user</button></td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
