@@ -1,0 +1,12 @@
+<p>cart works!</p>
+<div class="card">
+    <h2> List of Items </h2>
+  <div class="card-body">
+    <ul>
+      <li *ngFor="let item of items">
+        {{item}}
+      </li>
+    </ul>
+    <p-button label="Check out Amazon" (onClick)="handleClick()"></p-button>
+  </div>
+</div>

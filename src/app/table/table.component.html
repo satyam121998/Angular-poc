@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card">
+    <p-table [value]="datas" [scrollable]="true" scrollHeight="200px">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Age</th>
+          <th>Phone</th>
+          <th>Log Button</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-data> 
+        <tr>
+          <td >{{data.name}}</td>
+          <td >{{data.address}}</td>
+          <td >{{data.age}}</td>
+          <td >{{data.phone}}</td>
+          <td ><button class="btn btn-primary" (click)="getUser(data)">get user</button></td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

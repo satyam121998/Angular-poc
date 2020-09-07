@@ -1,0 +1,31 @@
+<body>
+  <div class="center">
+    <h3> Register </h3>
+    <div class="form-group">
+      <div class="txt_field">
+        <span class="p-float-label">
+          <input type="text" class="form-control" pInputText>
+          <label for="float-input">Name</label>
+        </span>
+      </div>
+      <div class="txt_field">
+        <span class="p-float-label">
+          <input type="text" class="form-control" [(ngModel)]="Username" id="float-input" pInputText>
+          <label for="float-input">Username</label>
+        </span>
+      </div>
+      <div class="txt_field">
+        <span class="p-float-label">
+          <input pPassword type="password" class="form-control" [(ngModel)]="Password" />
+          <label for="float-input">Password</label>
+        </span>
+      </div>
+      <div class="log_btn">
+        <button class="btn btn-primary" (click)="register()"> Register </button>
+      </div>
+      <div class="reg">
+        <a routerLink='/'> <u>Click to Login</u></a>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h2>This is a demo project </h2>
+      <p>This particiular angular project contains total of four components excluding the app component created through
+        the ng command of create a
+        component by just simply running ng generate component component-name <br> Below are the details about the
+        components
+        and the tests running on the components.</p>
+    </div>
+  </div>
+  <div class="components">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card">
+          <div class="card-body">
+            <h3>Componet HelloWorld</h3>
+            <p> My HelloWorld Component just contains a drop down list with selector and this drop down is taken from
+              prime ng</p>
+            <div class='hbutton '>
+              <a routerLink="/hello">
+                <p-button label="HelloWorld Componet"></p-button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card">
+          <div class="card-body">
+            <h3>Componet Card</h3>
+            <p> My Card Component just contains a button which is event driven and this button is taken from prime ng
+            </p>
+            <div class='hbutton'>
+              <a routerLink="/card">
+                <p-button label="Card Componet"></p-button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card">
+          <div class="card-body">
+            <h3>Componet Cart</h3>
+            <p> My Cart Component just contains a list and a button and only the button is taken from prime ng and is
+              event driven. <br> The list is taking the data from the <mark>service.ts</mark> file and the test is
+              running with the
+              <mark>service.spec.ts</mark> file</p>
+            <div class='hbutton'>
+              <a routerLink="/cart">
+                <p-button label="Cart Componet"></p-button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card" id="test_data">
+    <div class="card-body">
+      <h3>Test Data</h3>
+      <p>The test has been performed by using <mark>Karma</mark> which is using the framework of <mark>Jasmine</mark>.
+        To perform the test I just ran the command of ng test. <br> Just to test I have written an add function in my
+        <mark>app.component.ts</mark> and wriiten an unit case in <mark>app.component.spec.ts</mark> file. <br> Below is
+        the screenshot of the test.</p>
+        <a href="https://github.com/satyam121998/hello-angular-tdd"> Link to git repository </a>
+        <br>
+      <img class='test_image' src="/assets/test data.png" />
+    </div>
+  </div>
+</div>

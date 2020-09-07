@@ -1,0 +1,21 @@
+.container {
+    padding: 10px;
+}
+
+.components{
+    margin-top: 15px;
+}
+
+#hbutton{
+    margin-top: 10px;
+    
+}
+
+#test_data{
+    margin-top: 15px;
+}
+
+.test_image {
+    width: 1000px;
+    height: 400px;
+}
